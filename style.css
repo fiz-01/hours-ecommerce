@@ -1,0 +1,46 @@
+/* Common and Reset code starts here  */
+
+
+:root{
+/* colors here  */
+    --color-background:#F8F9FA;
+    --color-nav: #1A1A2E;
+    --color-text-nav:#FFFFFF;
+    --color-text-primary: #333333;
+    --color-btn-primary: #0056b3;
+    --color-link-hover: #0056b3;
+    --color-action-primary: #007BFF;
+    --color-action-hover:#28A745;
+    --color-others: #6C757D;
+    --color-other-hover: #5A6268;
+
+    --padding: 0.5rem;
+    --transition: all 0.3s;
+    --border-radius: 0.6rem;
+    --box-shadow: 0.1rem 0.2rem 0.8rem rgba(205,202,202,0.5);
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: none;
+    padding: none;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+    font-family: "Poppins", sans-serif;
+    font-size: 400,600,800;
+    font-style: normal;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    
+}
+/* Common and Reset code ends here  */
