@@ -5,10 +5,11 @@
 /* colors here  */
     --color-background:#F8F9FA;
     --color-nav: #1A1A2E;
-    --color-text-nav:#FFFFFF;
+    --color-nav-lower: rgba(26, 26, 46, 0.8);
+    --color-text-nav: #F3E5AB;
     --color-text-primary: #333333;
     --color-btn-primary: #0056b3;
-    --color-link-hover: #0056b3;
+    --color-link-hover: #FA5F55;
     --color-action-primary: #007BFF;
     --color-action-hover:#28A745;
     --color-others: #6C757D;
@@ -32,7 +33,7 @@
 
 html{
     scroll-behavior: smooth;
-    
+
     font-family: "Poppins", sans-serif;
     font-size: 400,600,800;
     font-style: normal;
@@ -44,3 +45,74 @@ img{
     
 }
 /* Common and Reset code ends here  */
+
+/* Navbar starts here  */
+
+nav{
+    position: sticky;
+    top: 0;
+    left: o;
+    z-index: 5;
+}
+
+.nav-upper{
+    min-height: 10vh;
+    background-color: var(--color-nav);
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul{
+    margin: 0;
+}
+.nav__list{
+  
+    transition: var(--transition);
+ 
+}
+
+.nav__list:hover{
+    
+    text-decoration: overline;
+    color:var(--color-link-hover);
+}
+
+.nav__link{
+    color: var(--color-text-nav);
+    transition: var(--transition);
+    
+}
+
+.nav__link:hover{
+    color: var(--color-link-hover);
+}
+
+.profile-img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 1px solid #ee2626;
+
+}
+
+.nav-lower{
+    background-color: var(--color-nav-lower);
+    min-height: 10vh;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.nav__brand{
+    font-size: 2rem;
+    
+
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
